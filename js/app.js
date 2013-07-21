@@ -1,12 +1,17 @@
 'use strict';
 
 var colourThief = new ColourThief();
+
+function areSimilar(a,b) {
+	return a>>2 === b>>2;
+}
+
 $(document).ready(function() {
 	$('#shansProfilePic').load(function() {
 		var theImage = $(this)[0];
 		var colour = colourThief.getColour(theImage, 4);
 		var bgColour, textColour;
-		if (colour[0] === 37 && colour[1] === 82 && colour[2] === 21) {
+		if (areSimilar(colour[0], 37) && areSimilar(colour[1], 82) && areSimilar(colour[2], 21)) {
 			$('#isHe').html('Yes! Poor Shan!');
 			bgColour = [130,30,20];
 			textColour = [220,180,180];
