@@ -1,14 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,600);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,500);
 
 body {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	background-color: #333333;
 	color: #cccccc;
 }
 
 h1 {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 #giantBox {
